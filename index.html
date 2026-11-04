@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nativa Pharmacy — Pharmacy, Trust Colony, Rahim Yar Khan</title>
+<meta name="description" content="Nativa Pharmacy — Pharmacy at Chowk, Trust Colony, Rahim Yar Khan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--leaf:#2f6b3a;--leaf2:#5a9e4d;--sage:#dcebd2;--mint:#eef6e6;--cream:#fbfaf2;--ink:#243524;--clay:#c98a4b}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito Sans',sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;padding-bottom:70px;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:40;background:rgba(251,250,242,.95);backdrop-filter:blur(8px);display:flex;justify-content:space-between;align-items:center;padding:.85rem 5%;border-bottom:1px solid var(--sage)}
+.logo{display:flex;align-items:center;gap:.7rem;font-family:'Fraunces',serif;font-size:1.35rem;color:var(--leaf)}
+.logo .leafmark{width:46px;height:46px;background:var(--leaf);border-radius:60% 4px 60% 4px;display:flex;align-items:center;justify-content:center;transform:rotate(-8deg)}
+.logo small{display:block;font-family:'Nunito Sans',sans-serif;font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--clay)}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.6rem;border-radius:999px;font-weight:800;transition:.25s;border:2px solid transparent}
+.btn-leaf{background:var(--leaf);color:#fff;box-shadow:0 10px 22px rgba(47,107,58,.28)}
+.btn-leaf:hover{background:var(--leaf2);transform:translateY(-2px)}
+.btn-soft{background:#fff;border-color:var(--leaf);color:var(--leaf)}
+.btn-soft:hover{background:var(--mint)}
+.hero{position:relative;background:linear-gradient(170deg,var(--mint),#fff 75%);padding:4.5rem 5% 6rem;text-align:center;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(2px);opacity:.55;animation:drift 9s ease-in-out infinite}
+.blob1{width:340px;height:340px;background:#cfe6bf;top:-120px;left:-100px;border-radius:58% 42% 55% 45%/50% 58% 42% 50%}
+.blob2{width:280px;height:280px;background:#f2e3c2;bottom:-110px;right:-70px;border-radius:45% 55% 48% 52%/58% 44% 56% 42%;animation-delay:1.4s}
+@keyframes drift{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-14px) rotate(4deg)}}
+.leaf{position:absolute;animation:sway 5s ease-in-out infinite;opacity:.8}
+@keyframes sway{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(10deg) translateY(-6px)}}
+.hero-inner{position:relative;z-index:2;max-width:760px;margin:0 auto}
+.hero .seed{display:inline-block;background:#fff;border:1px solid var(--sage);color:var(--leaf);font-weight:800;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;padding:.45rem 1.1rem;border-radius:999px}
+.hero h1{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(2.4rem,6.5vw,4rem);line-height:1.05;color:var(--leaf);margin:1.1rem 0 .6rem}
+.hero h1 em{font-style:italic;color:var(--clay);font-weight:400}
+.hero p{max-width:580px;margin:0 auto 1.4rem;color:#4a5a48}
+.rating{display:inline-flex;gap:.5rem;align-items:center;background:#fff;border:1px solid var(--sage);padding:.45rem 1.1rem;border-radius:999px;font-weight:700;box-shadow:0 6px 16px rgba(47,107,58,.1);margin-bottom:1.7rem}
+.stars{color:#e0a51f;letter-spacing:.12em}
+section{padding:4rem 5%;max-width:1120px;margin:0 auto}
+.sec-head{max-width:640px;margin-bottom:2.2rem}
+.sec-head small{letter-spacing:.26em;text-transform:uppercase;color:var(--clay);font-weight:800;font-size:.74rem}
+.sec-head h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(1.8rem,4vw,2.5rem);color:var(--leaf);margin-top:.4rem;line-height:1.15}
+.cards{display:grid;gap:1.3rem}
+.card{background:#fff;border:1px solid #e6edda;padding:1.9rem;position:relative;overflow:hidden;transition:.25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(47,107,58,.13)}
+.card:nth-child(1){border-radius:70px 18px 70px 18px}
+.card:nth-child(2){border-radius:18px 70px 18px 70px}
+.card:nth-child(3){border-radius:70px 18px 70px 18px}
+.card:nth-child(4){border-radius:18px 70px 18px 70px}
+.card .ico{font-size:2rem;margin-bottom:.7rem;display:block}
+.card h3{font-family:'Fraunces',serif;color:var(--leaf);font-size:1.3rem;margin-bottom:.4rem}
+.card p{color:#55634f;font-size:.96rem}
+.garden{background:linear-gradient(150deg,var(--leaf),#1e4d28);color:#eef6e6;border-radius:60px 20px 60px 20px;padding:2.8rem;position:relative;overflow:hidden}
+.garden h2{font-family:'Fraunces',serif;font-weight:600;font-size:1.9rem;margin-bottom:.8rem}
+.garden p{color:#cfe0c2;max-width:600px;margin-bottom:1.1rem}
+.garden ul{list-style:none;display:grid;gap:.6rem;margin-bottom:1.6rem}
+.garden li:before{content:"🌿";margin-right:.6rem}
+.steps{display:grid;gap:1.1rem;counter-reset:step}
+.step{display:flex;gap:1.1rem;align-items:flex-start;background:#fff;border:1px dashed #b9d2a4;border-radius:20px;padding:1.4rem}
+.step:before{counter-increment:step;content:counter(step);flex:none;width:44px;height:44px;border-radius:60% 4px 60% 4px;background:var(--sage);color:var(--leaf);font-family:'Fraunces',serif;font-weight:600;display:flex;align-items:center;justify-content:center;font-size:1.15rem}
+.promises{display:grid;gap:1.1rem}
+.promise{display:flex;gap:1rem;align-items:flex-start;padding:1.3rem 0;border-bottom:1px dashed #cfdec0}
+.promise:last-child{border-bottom:0}
+.promise .dot{flex:none;width:38px;height:38px;border-radius:50%;background:var(--mint);border:1px solid var(--sage);display:flex;align-items:center;justify-content:center;font-size:1.05rem}
+.promise b{font-family:'Fraunces',serif;color:var(--leaf);display:block;font-size:1.08rem}
+.promise p{color:#55634f;font-size:.95rem}
+.seasons{display:grid;gap:1rem;grid-template-columns:repeat(2,1fr)}
+.season{border-radius:26px;padding:1.4rem;color:#fff;font-family:'Fraunces',serif;font-size:1.05rem;min-height:110px;display:flex;align-items:flex-end;position:relative;overflow:hidden}
+.season small{display:block;font-family:'Nunito Sans',sans-serif;font-size:.8rem;opacity:.9}
+.season.s1{background:linear-gradient(140deg,#7db369,#2f6b3a)}
+.season.s2{background:linear-gradient(140deg,#c98a4b,#9a6224)}
+.season.s3{background:linear-gradient(140deg,#5a9e4d,#33691e)}
+.season.s4{background:linear-gradient(140deg,#a8c686,#5d7a35)}
+@media(min-width:820px){.seasons{grid-template-columns:repeat(4,1fr)}}
+.visit{text-align:center;background:#fff;border:1px solid var(--sage);border-radius:60px 20px 60px 20px;padding:2.8rem 1.6rem}
+.visit h2{font-family:'Fraunces',serif;color:var(--leaf);font-weight:600;font-size:1.9rem;margin-bottom:.7rem}
+.visit p{color:#55634f;margin-bottom:1.5rem}
+footer{text-align:center;padding:2.2rem 5% 1rem;color:#77836f;font-size:.88rem}
+footer b{font-family:'Fraunces',serif;color:var(--leaf)}
+.mapsbar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--leaf);box-shadow:0 -6px 20px rgba(0,0,0,.2)}
+.mapsbar a{display:block;padding:1rem;text-align:center;font-weight:800;color:#fff}
+@media(min-width:820px){.cards{grid-template-columns:1fr 1fr}.steps{grid-template-columns:repeat(3,1fr)}.step{flex-direction:column}body{padding-bottom:0}.mapsbar{display:none}}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="#"><span class="leafmark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 22C12 14 14 7 20 3c.8 7-1.5 15-8 19Zm0 0C12 15 9.5 9 4 6c-.5 6.5 2 13 8 16Z" fill="#eef6e6"/></svg></span><span>Nativa<small>Pharmacy · Naturally Caring</small></span></a>
+  <a class="btn btn-leaf" href="https://www.google.com/maps/search/?api=1&query=Nativa+Pharmacy+Rahim+Yar+Khan" target="_blank" rel="noopener">📍 Find Us on Maps</a>
+</header>
+<div class="hero">
+  <div class="blob blob1"></div><div class="blob blob2"></div>
+  <svg class="leaf" style="top:12%;left:8%" width="44" height="44" viewBox="0 0 24 24"><path d="M12 22C12 14 14 7 20 3c.8 7-1.5 15-8 19Zm0 0C12 15 9.5 9 4 6c-.5 6.5 2 13 8 16Z" fill="#5a9e4d"/></svg>
+  <svg class="leaf" style="top:20%;right:9%;animation-delay:1.2s" width="34" height="34" viewBox="0 0 24 24"><path d="M12 22C12 14 14 7 20 3c.8 7-1.5 15-8 19Zm0 0C12 15 9.5 9 4 6c-.5 6.5 2 13 8 16Z" fill="#c98a4b"/></svg>
+  <svg class="leaf" style="bottom:16%;left:14%;animation-delay:2s" width="28" height="28" viewBox="0 0 24 24"><path d="M12 22C12 14 14 7 20 3c.8 7-1.5 15-8 19Zm0 0C12 15 9.5 9 4 6c-.5 6.5 2 13 8 16Z" fill="#2f6b3a"/></svg>
+  <div class="hero-inner">
+    <span class="seed">🌱 Pharmacy · Trust Colony</span>
+    <h1>Nativa Pharmacy,<br><em>rooted in care.</em></h1>
+    <p>Your neighbourhood pharmacy at Chowk, Trust Colony — a gentler, calmer way to pick up your medicines and everyday pharmacy essentials.</p>
+    <div><span class="rating"><span class="stars">★★★★★</span> 4.8 stars (17 reviews)</span></div>
+    <div>
+      <a class="btn btn-leaf" href="https://www.google.com/maps/search/?api=1&query=Nativa+Pharmacy+Rahim+Yar+Khan" target="_blank" rel="noopener">📍 Get Directions on Google Maps</a>
+    </div>
+  </div>
+</div>
+<section>
+  <div class="sec-head"><small>Grown Around You</small><h2>What you will find at Nativa</h2></div>
+  <div class="cards">
+    <article class="card"><span class="ico">💊</span><h3>Medicines</h3><p>Medicines for everyday needs, served with patience at the counter — take your time, ask your questions.</p></article>
+    <article class="card"><span class="ico">🌿</span><h3>Everyday Essentials</h3><p>Daily pharmacy essentials for the whole family, gathered in one calm, easy-to-browse space.</p></article>
+    <article class="card"><span class="ico">🍃</span><h3>A Calmer Visit</h3><p>No rush, no noise — a soft, natural space in the middle of Trust Colony where a pharmacy visit feels easy.</p></article>
+    <article class="card"><span class="ico">🤲</span><h3>Neighbourly Help</h3><p>A local pharmacy that knows its neighbourhood. Walk in at the Chowk and the team will be glad to help.</p></article>
+  </div>
+</section>
+<section style="padding-top:0">
+  <div class="garden">
+    <h2>In the heart of Trust Colony 🌿</h2>
+    <p>Nativa Pharmacy sits right at the Chowk in Trust Colony, Rahim Yar Khan — easy to reach on foot, by bike or by car.</p>
+    <ul><li>Easy-to-find Chowk location</li><li>Medicines &amp; everyday pharmacy essentials</li><li>Rated 4.8 stars by 17 reviewers</li></ul>
+    <a class="btn btn-soft" href="https://www.google.com/maps/search/?api=1&query=Nativa+Pharmacy+Rahim+Yar+Khan" target="_blank" rel="noopener">📍 Open in Google Maps</a>
+  </div>
+</section>
+<section style="padding-top:0">
+  <div class="sec-head"><small>Simple Steps</small><h2>Visiting is easy</h2></div>
+  <div class="steps">
+    <div class="step"><div><strong>Find us</strong><p>Open the Google Maps listing and head to Chowk, Trust Colony.</p></div></div>
+    <div class="step"><div><strong>Walk in</strong><p>Bring your prescription or simply tell the counter what you need.</p></div></div>
+    <div class="step"><div><strong>Head home happy</strong><p>Pick up your medicines and essentials, all in one gentle visit.</p></div></div>
+  </div>
+</section>
+<section style="padding-top:0">
+  <div class="sec-head"><small>Our Quiet Promises</small><h2>Small things, done gently</h2></div>
+  <div class="promises">
+    <div class="promise"><span class="dot">🌱</span><div><b>Patience at the counter</b><p>Questions are welcome here — understanding your medicines matters as much as taking them home.</p></div></div>
+    <div class="promise"><span class="dot">🍃</span><div><b>A space that breathes</b><p>Soft colours, natural light and an unhurried feel — a pharmacy visit that never feels like a burden.</p></div></div>
+    <div class="promise"><span class="dot">🌿</span><div><b>Part of the neighbourhood</b><p>Planted right at the Chowk in Trust Colony, Nativa grows with the families who live around it.</p></div></div>
+  </div>
+</section>
+<section style="padding-top:0">
+  <div class="sec-head"><small>Through the Year</small><h2>Wellness for every season</h2></div>
+  <div class="seasons">
+    <div class="season s1">Spring<small>Fresh starts &amp; everyday care</small></div>
+    <div class="season s2">Summer<small>Stay stocked, stay comfortable</small></div>
+    <div class="season s3">Monsoon<small>Essentials close to home</small></div>
+    <div class="season s4">Winter<small>Warm, gentle everyday care</small></div>
+  </div>
+</section>
+<section style="padding-top:0">
+  <div class="visit">
+    <h2>Visit Nativa Pharmacy</h2>
+    <p><strong>Category:</strong> Pharmacy<br>📍 Chowk, Trust Colony, Rahim Yar Khan, 64200, Pakistan</p>
+    <a class="btn btn-leaf" href="https://www.google.com/maps/search/?api=1&query=Nativa+Pharmacy+Rahim+Yar+Khan" target="_blank" rel="noopener">📍 Get Directions</a>
+  </div>
+</section>
+<footer>
+  <p><b>Nativa Pharmacy</b> · Pharmacy · Trust Colony, Rahim Yar Khan</p>
+  <p style="margin-top:.5rem">Sample website prototype made for demonstration — not the official website of this business.</p>
+</footer>
+<div class="mapsbar"><a href="https://www.google.com/maps/search/?api=1&query=Nativa+Pharmacy+Rahim+Yar+Khan" target="_blank" rel="noopener">📍 Directions — Nativa Pharmacy, Trust Colony</a></div>
+</body>
+</html>
